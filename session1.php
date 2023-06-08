@@ -1,3 +1,11 @@
+<?php
+
+session_start();
+
+$_SESSION['greeting'] = 'Hello Student this is awesome'
+
+?>
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -9,12 +17,6 @@
 	<title>Document</title>
 </head>
 <body>
-
-<form action='dynamic.php' method='post'>
-	<input type='text' name='username'>
-	<input type='password'>
-	<button type='submit' name='submit'>press</button>
-</form>
 
 </body>
 </html>

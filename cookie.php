@@ -1,3 +1,13 @@
+<?php
+
+$name = 'SomeName';
+$value = 100;
+$expiration = time() + (60 * 60 * 24);
+
+setcookie($name, $value, $expiration);
+
+?>
+
 <!doctype html>
 <html lang='en'>
 <head>
@@ -12,15 +22,11 @@
 
 <?php
 
-$name = '';
-
-if(isset($_POST['submit'])) {
-	$name = $_POST['username'];
+if (isset($_COOKIE['SomeName'])) {
+	$some_one =  $_COOKIE['SomeName'];
 }
 
 ?>
-
-	<h1><?=$name?></h1>
 
 </body>
 </html>
